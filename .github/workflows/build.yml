@@ -1,7 +1,6 @@
 name: "Build iOS app"
 
-# on: [push]
-on: [workflow_dispatch]
+on: [push]
 
 jobs:
   build_ios:
@@ -32,4 +31,5 @@ jobs:
           path: ${{ runner.temp }}/.ipa
           # you can also archive the entire directory
           # path: ${{ runner.temp }}/build
+
           retention-days: 3
